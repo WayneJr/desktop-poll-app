@@ -1,0 +1,33 @@
+.border-root {
+    -fx-background-color: #FFFFFF;
+}
+
+/* Remove the underlining in the hyperlinks when visited or hovered*/
+.remove-hover-visit:hover, .remove-hover-visit:visited {
+    -fx-underline: false;
+}
+
+.back-button {
+    -fx-text-fill: #000000;
+}
+
+.back-button:hover {
+    -fx-background-color: #0066FF;
+}
+
+.back-hbox {
+    -fx-background-color: #1CCFE8;
+}
+
+.position-title-pane {
+    -fx-background-color: #FFFFFF;
+}
+
+.position-hbox {
+    /*-fx-background-color: #FFFFFF;*/
+
+}
+
+.add-position-plus:hover {
+    -fx-fill: #000000;
+}

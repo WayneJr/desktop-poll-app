@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="721.0" styleClass="border-root" stylesheets="@css/positions.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.positions.Positions">
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" styleClass="position-hbox" BorderPane.alignment="CENTER">
+         <children>
+            <Accordion>
+              <panes>
+                <TitledPane animated="false" styleClass="position-title-pane" text="POSITION CLASS">
+                     <content>
+                        <JFXListView />
+                     </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <Accordion>
+              <panes>
+                <TitledPane animated="false" styleClass="position-title-pane" text="POSITION CLASS">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <Accordion>
+              <panes>
+                <TitledPane animated="false" text="POSITION CLASS">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="70.0" prefWidth="600.0" styleClass="back-hbox" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink fx:id="backButton" text="BACK">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CHEVRON_CIRCLE_LEFT" size="40" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="back-button" />
+                  <String fx:value="remove-hover-visit" />
+               </styleClass>
+            </Hyperlink>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" fillHeight="false" prefHeight="73.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink alignment="CENTER" contentDisplay="TOP" styleClass="remove-hover-visit" text="ADD NEW POSITION">
+               <graphic>
+                  <FontAwesomeIconView fill="#0066ff" glyphName="PLUS_CIRCLE" size="60" styleClass="add-position-plus" />
+               </graphic>
+            </Hyperlink>
+         </children>
+         <padding>
+            <Insets bottom="40.0" right="100.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

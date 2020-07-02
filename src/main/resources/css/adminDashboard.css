@@ -1,0 +1,39 @@
+
+
+.headerLinks {
+    -fx-text-fill: #000000;
+    -fx-font-size: 15px;
+}
+
+.headerLinks:hover {
+    -fx-underline: false;
+    -fx-background-color: #0066FF;
+}
+
+.headerLinks:visited {
+    -fx-underline: false;
+}
+
+.positionsCategory {
+    -fx-background-color: #49EF4F;
+    -fx-background-radius: 10px;
+}
+
+.candidatesCategory {
+    -fx-background-color: #FF005C;
+    -fx-background-radius: 10px;
+}
+
+.votingCategory {
+    -fx-background-color: #C93BED;
+    -fx-background-radius: 10px;
+}
+
+.registrationCategory {
+    -fx-background-color: #FFB84C;
+    -fx-background-radius: 10px;
+}
+
+.categoryTitles {
+    -fx-font-size: 17px;
+}

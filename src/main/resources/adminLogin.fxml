@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="loginGrid" alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="516.0" styleClass="root" stylesheets="@css/adminLogin.css" vgap="15.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.login.AdminLogin">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.0" minWidth="10.0" prefWidth="257.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints fillHeight="false" maxHeight="93.0" minHeight="10.0" prefHeight="42.0" />
+      <RowConstraints fillHeight="false" maxHeight="93.0" minHeight="10.0" prefHeight="42.0" />
+      <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="458.0" styleClass="welcome-text" text="Welcome">
+         <padding>
+            <Insets left="50.0" />
+         </padding></Label>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="1">
+         <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="GRAPHIC_ONLY" prefHeight="35.0" prefWidth="48.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER" size="25" />
+               </graphic>
+            </Label>
+            <JFXTextField fx:id="usernameField" focusColor="#1ccfe8" prefHeight="39.0" prefWidth="282.0" promptText="Username" styleClass="textfield" unFocusColor="#1ccfe8">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </JFXTextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="2">
+         <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="GRAPHIC_ONLY" prefHeight="35.0" prefWidth="48.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="KEY" size="23" />
+               </graphic>
+            </Label>
+            <JFXPasswordField fx:id="passwordField" focusColor="#1ccfe8" onKeyReleased="#enterTextField" prefHeight="39.0" prefWidth="282.0" promptText="Password" styleClass="textfield" unFocusColor="#1ccfe8">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </JFXPasswordField>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER_RIGHT" prefHeight="77.0" prefWidth="282.0" GridPane.rowIndex="3" GridPane.rowSpan="2147483647">
+         <children>
+            <JFXButton fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" onAction="#handleLogin" prefHeight="39.0" prefWidth="282.0" styleClass="majorButton" text="Login" VBox.vgrow="NEVER" />
+            <HBox alignment="CENTER_RIGHT" fillHeight="false" prefHeight="33.0" prefWidth="282.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="156.0" text="Don't have an account?" />
+                  <Hyperlink alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="61.0" style="-fx-text-fill: #000000;" text="Sign Up" />
+               </children>
+               <VBox.margin>
+                  <Insets right="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="50.0" left="60.0" right="100.0" top="50.0" />
+   </padding>
+</GridPane>

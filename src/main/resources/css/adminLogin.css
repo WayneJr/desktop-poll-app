@@ -1,0 +1,27 @@
+.root {
+    -fx-background-color: #1CCFE8;
+}
+
+.welcome-text {
+    -fx-font-family: "DejaVu Sans";
+    -fx-font-weight: bold;
+    -fx-font-size: 40px;
+}
+
+.majorButton {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #000000;
+    -fx-background-radius: 20px;
+}
+
+.majorButton:hover {
+    -fx-background-color: #0066FF;
+}
+.textfield {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20px;
+}
+
+.changeWhite {
+    -fx-text-fill: #FFFFFF;
+}

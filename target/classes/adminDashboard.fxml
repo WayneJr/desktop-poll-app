@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="dashBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="763.0" styleClass="root" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.login.AdminDashboard">
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="76.0" prefWidth="600.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <children>
+            <Hyperlink fx:id="election" styleClass="headerLinks" text="Election" />
+            <Hyperlink fx:id="dashboard" styleClass="headerLinks" text="Dashboard" />
+            <Hyperlink fx:id="profile" styleClass="headerLinks" text="Profile" />
+            <Hyperlink fx:id="logout" contentDisplay="RIGHT" onMouseClicked="#handleLogout" styleClass="headerLinks" text="Logout">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SIGN_OUT" size="18" />
+               </graphic></Hyperlink>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane alignment="CENTER" hgap="10.0" prefHeight="383.0" prefWidth="378.0" vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints fillWidth="false" maxWidth="163.0" minWidth="10.0" prefWidth="163.0" />
+          <ColumnConstraints fillWidth="false" maxWidth="163.0" minWidth="10.0" prefWidth="163.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="165.0" minHeight="10.0" prefHeight="165.0" />
+          <RowConstraints maxHeight="165.0" minHeight="10.0" prefHeight="165.0" />
+            <RowConstraints fillHeight="false" maxHeight="50.0" minHeight="10.0" prefHeight="50.0" />
+        </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" prefHeight="164.0" prefWidth="164.0" spacing="10.0" styleClass="positionsCategory">
+               <children>
+                  <Label>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CERTIFICATE" size="30" />
+                     </graphic>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="99.0" text="POSITIONS">
+                     <styleClass>
+                        <String fx:value="changeWhite" />
+                        <String fx:value="categoryTitles" />
+                     </styleClass></Label>
+                  <JFXButton fx:id="positions" onMouseClicked="#handlePositionsView" styleClass="majorButton" text="VIEW/MANAGE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="164.0" prefWidth="164.0" spacing="10.0" styleClass="candidatesCategory" GridPane.columnIndex="1">
+               <children>
+                  <Label>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="30" />
+                     </graphic>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="123.0" text="CANDIDATES">
+                     <styleClass>
+                        <String fx:value="changeWhite" />
+                        <String fx:value="categoryTitles" />
+                     </styleClass></Label>
+                  <JFXButton fx:id="candidates" onMouseClicked="#handleCandidatesView" styleClass="majorButton" text="VIEW/MANAGE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="184.0" layoutY="10.0" prefHeight="164.0" prefWidth="164.0" spacing="10.0" styleClass="votingCategory" GridPane.rowIndex="1">
+               <children>
+                  <Label>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="THUMBS_UP" size="30" />
+                     </graphic>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="78.0" text="VOTING">
+                     <styleClass>
+                        <String fx:value="changeWhite" />
+                        <String fx:value="categoryTitles" />
+                     </styleClass></Label>
+                  <JFXButton fx:id="voting" styleClass="majorButton" text="VIEW/MANAGE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="157.0" prefHeight="164.0" prefWidth="164.0" spacing="10.0" styleClass="registrationCategory" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="30" />
+                     </graphic>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="32.0" prefWidth="131.0" text="REGISTRATION">
+                     <styleClass>
+                        <String fx:value="changeWhite" />
+                        <String fx:value="categoryTitles" />
+                     </styleClass></Label>
+                  <JFXButton fx:id="registration" styleClass="majorButton" text="VIEW/MANAGE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
+               </children>
+            </VBox>
+            <JFXButton fx:id="results" contentDisplay="RIGHT" prefHeight="26.0" prefWidth="320.0" styleClass="majorButton" text="RESULTS" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="TROPHY" size="17" />
+               </graphic></JFXButton>
+         </children>
+      </GridPane>
+   </center>
+   <right>
+      <Pane prefHeight="300.0" prefWidth="129.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <Pane prefHeight="300.0" prefWidth="129.0" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <Pane prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <stylesheets>
+      <URL value="@css/adminLogin.css" />
+      <URL value="@css/adminDashboard.css" />
+   </stylesheets>
+</BorderPane>
