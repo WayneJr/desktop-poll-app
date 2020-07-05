@@ -10,10 +10,10 @@ import java.util.Properties;
 @Component
 public class DbConn {
 
-    private final String USER = "wayne";
-    private final String PASSWORD = "wayne";
+    private static final String USER = "wayne";
+    private static final String PASSWORD = "wayne";
 
-    public Connection connect() throws ClassNotFoundException, SQLException {
+    public static Connection connect() throws ClassNotFoundException, SQLException {
 
         // Load up the postgresql driver
         Class.forName("org.postgresql.Driver");

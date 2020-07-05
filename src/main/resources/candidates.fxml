@@ -2,22 +2,72 @@
 
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<?import javafx.scene.control.Label?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="candBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.candidates.Candidates">
    <top>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="130.0" BorderPane.alignment="CENTER">
          <children>
-            <Label contentDisplay="RIGHT">
-               <graphic>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Hyperlink fx:id="candBack" onMouseClicked="#handleBack" prefHeight="48.0" prefWidth="122.0" text="BACK">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CHEVRON_CIRCLE_LEFT" size="40" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="back-button" />
+                        <String fx:value="remove-hover-visit" />
+                     </styleClass>
+                  </Hyperlink>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="668.0" spacing="20.0">
+               <children>
                   <FontAwesomeIconView glyphName="SEARCH" size="25" />
-               </graphic>
-            </Label>
-            <JFXTextField prefHeight="26.0" prefWidth="547.0" />
+                  <JFXTextField focusColor="#1ccfe8" prefHeight="26.0" prefWidth="547.0" promptText="Search" styleClass="textfield" unFocusColor="#1ccfe8">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </padding></JFXTextField>
+               </children>
+            </HBox>
          </children>
       </HBox>
    </top>
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="candID" prefWidth="75.0" resizable="false" text="ID" />
+          <TableColumn fx:id="candFName" prefWidth="205.0" resizable="false" text="FIRST NAME" />
+            <TableColumn fx:id="candLName" prefWidth="170.0" resizable="false" text="LAST NAME" />
+            <TableColumn fx:id="candPosition" prefWidth="220.0" resizable="false" text="POSITION" />
+            <TableColumn fx:id="positionClass" prefWidth="226.0" resizable="false" text="POSITION CLASS" />
+            <TableColumn fx:id="votesReceived" prefWidth="233.0" resizable="false" text="VOTES RECEIVED" />
+        </columns>
+      </TableView>
+   </center>
+   <left>
+      <Pane prefHeight="700.0" prefWidth="75.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="75.0" BorderPane.alignment="CENTER" />
+   </right>
+   <stylesheets>
+      <URL value="@css/adminLogin.css" />
+      <URL value="@css/positions.css" />
+   </stylesheets>
 </BorderPane>

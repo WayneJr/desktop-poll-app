@@ -80,8 +80,6 @@ public class AdminDashboard {
             Parent root = loader.load();
             Stage dashStage = (Stage) dashBorderPane.getScene().getWindow();
             dashStage.setScene(new Scene(root, 510, 516));
-            dashStage.sizeToScene();
-            dashStage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -92,7 +90,9 @@ public class AdminDashboard {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(location));
             Parent root = loader.load();
-            ((Stage) dashBorderPane.getScene().getWindow()).setScene(new Scene(root));
+            Stage dashStage = (Stage) dashBorderPane.getScene().getWindow();
+            dashStage.setScene(new Scene(root));
+            dashStage.setMaximized(true);
         } catch (IOException e) {
             e.printStackTrace();
         }

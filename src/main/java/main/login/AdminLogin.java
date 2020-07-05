@@ -38,12 +38,9 @@ public class AdminLogin {
 
     Connection conn;
 
-    ApplicationContext factory = new AnnotationConfigApplicationContext(main.AppConfig.class);
-
     public void initialize() {
         try {
-            DbConn connection = factory.getBean(DbConn.class);
-            conn = connection.connect();
+            conn = DbConn.connect();
             System.out.println("Database connected");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
@@ -82,7 +79,7 @@ public class AdminLogin {
                     Stage dashStage = (Stage) loginGrid.getScene().getWindow();
 //                    Stage dashStage = new Stage();
                     dashStage.setScene(dashScene);
-                    dashStage.setFullScreen(true);
+                    dashStage.setMaximized(true);
                 } catch (IOException e) {
                     e.getMessage();
                 }

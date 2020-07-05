@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/candidates/CandidateModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/candidates/CandidateModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/candidates/Candidates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/candidates/Candidates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/database/DbConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/database/DbConn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/login/AdminDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/login/AdminDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/login/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/login/AdminLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/candidates.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/candidates.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +95,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -99,6 +112,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1dK9Latcdx97rKGmom3hf0Zhl71" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -116,6 +130,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
@@ -267,7 +282,10 @@
       <workItem from="1593520990015" duration="196000" />
       <workItem from="1593531374526" duration="3055000" />
       <workItem from="1593616323232" duration="1632000" />
-      <workItem from="1593672782768" duration="1978000" />
+      <workItem from="1593672782768" duration="6564000" />
+      <workItem from="1593718666711" duration="1110000" />
+      <workItem from="1593732992582" duration="1140000" />
+      <workItem from="1593900587885" duration="7226000" />
     </task>
     <servers />
   </component>
@@ -279,6 +297,10 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="235" y="74" width="800" height="683" key="#Notifications" timestamp="1593900744559">
+      <screen x="0" y="25" width="1280" height="775" />
+    </state>
+    <state x="235" y="74" width="800" height="683" key="#Notifications/0.25.1280.775@0.25.1280.775" timestamp="1593900744559" />
     <state x="235" y="74" width="800" height="683" key="#Project_Structure" timestamp="1593216944340">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
@@ -287,10 +309,10 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="235" y="74" width="866" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1280.775@0.25.1280.775" timestamp="1593212260404" />
-    <state x="448" y="99" width="374" height="632" key="#com.intellij.ide.util.MemberChooser" timestamp="1593534112364">
+    <state x="448" y="99" width="374" height="632" key="#com.intellij.ide.util.MemberChooser" timestamp="1593907494454">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="448" y="99" width="374" height="632" key="#com.intellij.ide.util.MemberChooser/0.25.1280.775@0.25.1280.775" timestamp="1593534112364" />
+    <state x="448" y="99" width="374" height="632" key="#com.intellij.ide.util.MemberChooser/0.25.1280.775@0.25.1280.775" timestamp="1593907494454" />
     <state x="400" y="202" width="525" height="433" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1593212256537">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
@@ -315,22 +337,22 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="418" y="170" width="692" height="490" key="FileChooserDialogImpl/0.25.1280.775@0.25.1280.775" timestamp="1593215966119" />
-    <state width="1238" height="161" key="GridCell.Tab.0.bottom" timestamp="1593677613011">
+    <state width="1238" height="161" key="GridCell.Tab.0.bottom" timestamp="1593908211831">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1238" height="161" key="GridCell.Tab.0.bottom/0.25.1280.775@0.25.1280.775" timestamp="1593677613011" />
-    <state width="1238" height="161" key="GridCell.Tab.0.center" timestamp="1593677613010">
+    <state width="1238" height="161" key="GridCell.Tab.0.bottom/0.25.1280.775@0.25.1280.775" timestamp="1593908211831" />
+    <state width="1238" height="161" key="GridCell.Tab.0.center" timestamp="1593908211830">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1238" height="161" key="GridCell.Tab.0.center/0.25.1280.775@0.25.1280.775" timestamp="1593677613010" />
-    <state width="1238" height="161" key="GridCell.Tab.0.left" timestamp="1593677613009">
+    <state width="1238" height="161" key="GridCell.Tab.0.center/0.25.1280.775@0.25.1280.775" timestamp="1593908211830" />
+    <state width="1238" height="161" key="GridCell.Tab.0.left" timestamp="1593908211829">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1238" height="161" key="GridCell.Tab.0.left/0.25.1280.775@0.25.1280.775" timestamp="1593677613009" />
-    <state width="1238" height="161" key="GridCell.Tab.0.right" timestamp="1593677613010">
+    <state width="1238" height="161" key="GridCell.Tab.0.left/0.25.1280.775@0.25.1280.775" timestamp="1593908211829" />
+    <state width="1238" height="161" key="GridCell.Tab.0.right" timestamp="1593908211830">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state width="1238" height="161" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1593677613010" />
+    <state width="1238" height="161" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1593908211830" />
     <state width="1238" height="231" key="GridCell.Tab.1.bottom" timestamp="1592341762889">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
@@ -363,10 +385,10 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="494" y="178" width="282" height="474" key="com.intellij.database.view.ui.DbObjectDialog/0.25.1280.775@0.25.1280.775" timestamp="1592391228453" />
-    <state x="311" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1593672808031">
+    <state x="311" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1593900728689">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="311" y="240" key="com.intellij.ide.util.TipDialog/0.25.1280.775@0.25.1280.775" timestamp="1593672808031" />
+    <state x="311" y="240" key="com.intellij.ide.util.TipDialog/0.25.1280.775@0.25.1280.775" timestamp="1593900728689" />
     <state x="288" y="90" width="693" height="651" key="spring file set editor" timestamp="1593218442747">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
